@@ -1,0 +1,394 @@
+/* ==================== General & Variables ==================== */
+:root {
+    --primary-color: #007bff;
+    --dark-color: #343a40;
+    --light-color: #f8f9fa;
+    --text-color: #212529;
+    --border-color: #dee2e6;
+    --footer-bg: #2c3e50;
+    --footer-text: #ecf0f1;
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+    color: var(--text-color);
+    line-height: 1.6;
+    direction: rtl;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--dark-color);
+}
+
+.page-section {
+    padding: 60px 0;
+}
+
+/* ==================== Header ==================== */
+.main-header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav ul li a {
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.btn.btn-login {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.btn.btn-login:hover {
+    background-color: #0056b3;
+}
+
+/* ==================== Hero Section ==================== */
+.hero-section {
+    background-color: var(--light-color);
+    min-height:50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-top: 30px;
+    position: relative;
+}
+.hero-section h1 {
+    font-size: 3rem;
+    color: var(--border-color);
+}
+
+/* ==================== Gallery Section ==================== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.gallery-item {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.gallery-item img {
+    display: block;
+}
+
+.gallery-item p {
+    padding: 15px;
+    margin: 0;
+    background-color: #fff;
+}
+
+/* ==================== Info Card Section ==================== */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.info-card {
+    background-color: var(--light-color);
+    border: 1px solid var(--border-color);
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+/* ==================== Stats Section ==================== */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 auto 15px;
+}
+
+.stat-label {
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+/* ==================== Footer ==================== */
+.site-footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding-top: 50px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #4e5d6c;
+}
+
+.footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-about .logo {
+    color: #fff;
+}
+
+.footer-description {
+    color: #bdc3c7;
+    line-height: 1.8;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #bdc3c7;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+}
+
+.footer-contact p {
+    margin: 0 0 10px;
+    color: #bdc3c7;
+}
+
+.footer-bottom {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #bdc3c7;
+}
+
+/* ==================== Hero Navigation (Menu on Slider) ==================== */
+.hero-nav {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.95); /* پس‌زمینه نیمه‌شفاف سفید */
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 10;
+    border: 1px solid #eee;
+}
+
+.hero-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.hero-nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--dark-color);
+    font-weight: 700;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-nav ul li a:hover {
+    background-color: #e9ecef;
+    color: var(--primary-color);
+}
+
+/* استایل برای لینک فعال */
+.hero-nav ul li a.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* ==================== Responsive Styles ==================== */
+
+/* استایل اولیه دکمه همبرگری (در دسکتاپ مخفی است) */
+.mobile-nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--dark-color);
+    cursor: pointer;
+}
+
+/* -------------------- Tablet Styles (<= 992px) -------------------- */
+@media (max-width: 992px) {
+    /* هنوز تغییرات زیادی برای تبلت نیاز نداریم، اما آماده‌اش می‌کنیم */
+    .container {
+        padding: 0 20px;
+    }
+}
+
+/* -------------------- Mobile Styles (<= 768px) -------------------- */
+@media (max-width: 768px) {
+    /* === Header === */
+    .main-nav {
+        display: none; /* منوی اصلی را مخفی کن */
+        /* در آینده با جاوااسکریپت، این منو را به صورت عمودی نمایش می‌دهیم */
+    }
+
+    .mobile-nav-toggle {
+        display: block; /* دکمه همبرگری را نمایش بده */
+        order: 2; /* ترتیب نمایش در فلکس */
+    }
+
+    /* === Footer === */
+    .footer-content {
+        flex-direction: column; /* ستون‌ها زیر هم قرار بگیرند */
+        align-items: center; /* محتوا در مرکز قرار گیرد */
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-section {
+        align-items: center; /* آیتم‌های هر بخش هم مرکزچین شوند */
+    }
+
+    .auth-buttons {
+        order: 3;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .header-content {
+        justify-content: space-between;
+    }
+}
+.hero-section {
+    min-height: 300px; /* کاهش ارتفاع برای موبایل */
+    height: auto;
+}
+
+.hero-section h1 {
+    font-size: 2rem; /* کاهش اندازه فونت عنوان */
+}
+
+/* === Hero Nav === */
+.hero-nav ul {
+    flex-wrap: wrap; /* اجازه می‌دهد آیتم‌ها به خط بعدی بروند */
+    justify-content: center;
+}
+
+.hero-nav ul li a {
+    padding: 8px 15px; /* کمی پدینگ را کاهش می‌دهیم */
+}
+
+
+/* داخل @media (max-width: 992px) - استایل تبلت */
+
+/* === Gallery Section === */
+.gallery {
+    grid-template-columns: repeat(2, 1fr); /* گالری ۲ ستونه شود */
+}
+
+/* === Stats Section === */
+.stats-grid {
+    grid-template-columns: repeat(3, 1fr); /* آمار ۳ ستونه شود */
+}
+
+
+/* ------------------------------------------------------------------ */
+
+
+/* داخل @media (max-width: 768px) - استایل موبایل */
+
+/* === Gallery Section === */
+.gallery {
+    grid-template-columns: 1fr; /* گالری تک ستونه شود */
+}
+
+/* === Stats Section === */
+.stats-grid {
+    grid-template-columns: repeat(2, 1fr); /* آمار ۲ ستونه شود */
+}
+
