@@ -10,7 +10,7 @@
             <img src="{{ $imageUrl }}" alt="{{ $title }}">
         </div>
         <div class="gallery-caption">
-            <h3>{{ $title }}</h3>
+            <h3>title is:{{ $title }}</h3>
         </div>
     </a>
 </div>

@@ -12,7 +12,7 @@
         <li>type is:<strong>{{$post->type}}</strong></li>
         <li>text is:<strong>{{$post->text}}</strong></li>
     @empty
-        <h1>NO NewsPaper</h1>
+        <h1>NO NewsPaper  </h1>
     @endforelse
 </body>
 </html>
